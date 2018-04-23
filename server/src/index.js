@@ -26,6 +26,6 @@ router.route('/bears/:id')
     }) 
 
 app.use(cors());
-// all of our routes will be prefixed with /api 
+
 app.use('/api', bodyParser.json(), router); 
 app.listen(8000);
